@@ -70,7 +70,7 @@ const VideoCard = ({ post }: { post: Video }) => {
             setisHover(false);
           }}
         >
-          <Link href={"/"}>
+          <Link href={`/videoDetail/${post._id}`}>
             <video
               ref={videoRef}
               src={post.video.asset.url}

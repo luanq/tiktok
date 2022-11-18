@@ -35,28 +35,7 @@ const Sidebar = () => {
               </div>
             </Link>
           </div>
-          {!userProfile && (
-            <div className="px-2 py-4 hidden xl:block">
-              <p className=" text-gray-400">登录观看视频</p>
-              <div className=" pr-4 ">
-                <GoogleLogin
-                  clientId=""
-                  render={(renderProps) => (
-                    <button
-                    className=" bg-white text-lg text-[#F51997] border-[1px] font-semibold w-full border-[#F51997] px-6 py-3 rounded-md outline-none"
-                      onClick={renderProps.onClick}
-                      disabled={renderProps.disabled}
-                    >
-                      谷歌登录
-                    </button>
-                  )}
-                  onSuccess={() => {}}
-                  onFailure={() => {}}
-                  cookiePolicy={"single_host_origin"}
-                />
-              </div>
-            </div>
-          )}
+          
           <Discover/>
           <SuggestedAccounts/>
           <Footer/>
