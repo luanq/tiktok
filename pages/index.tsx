@@ -3,6 +3,7 @@ import axios from "axios";
 import { Video } from "../types";
 import VideoCard from "../components/VideoCard";
 import  NoResult  from "../components/NoResult";
+import { BASE_URL } from "../utils";
 
 interface IProps{
   videos:Video[]
@@ -23,7 +24,7 @@ const Home=({videos}:IProps)=> {
 
 //next.js对getsrversideprops函数使用ssr
 export const getServerSideProps=async()=>{
-  const {data}=await axios.get('http://localhost:3000/api/post');
+  const {data}=await axios.get(`${BASE_URL}/api/post`);
   
   return {
     props:{

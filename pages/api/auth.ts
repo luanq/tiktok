@@ -8,6 +8,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
     if(req.method==='POST'){
+      //在sanity内部创建用户数据
     const user=req.body
         client.createIfNotExists(user).then(()=>{res.status(200).json('登录成功')})
     }

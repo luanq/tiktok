@@ -5,7 +5,7 @@ import axios from 'axios';
 import { BASE_URL } from '../utils';
 
 const authStore = (set: any) => ({
-  userProfile:null,
+  userProfile:null as any,
   allUsers: [],
   
   addUser: (user: any) => set({ userProfile: user }),
@@ -16,6 +16,7 @@ const authStore = (set: any) => ({
 
     set({ allUsers: response.data });
   },
+
 });
 
 const useAuthStore = create((
