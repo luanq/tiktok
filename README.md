@@ -7,3 +7,6 @@
 熟悉了如何适配不同尺寸的屏幕完成响应式开发和对tailiwnd css的了解
 
 了解了next.js以及zustan等react新的相关生态的使用,和对santiy这种serveless形式的了解
+
+
+使用vercel部署在https://tiktok-pink.vercel.app/上
